@@ -1,0 +1,143 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$google-color: #d50f25;
+$text-transform: uppercase;
+$icon-size: 2rem;
+
+
+.split.button {
+  width: 100%;
+  
+  &.facebook {
+    background: $facebook-color;
+    text-transform: $text-transform;
+    
+    span {
+      background: darken( $facebook-color, 10% );
+      
+      &:after { 
+        border: none;
+        font-family: "foundation-icons";
+        content: "\f1c4";
+        font-size: $icon-size;
+        line-height: 0.25rem;
+        margin-left: -0.7rem;
+      }
+    }
+  }
+  
+  &.twitter {
+    background: $twitter-color;
+    text-transform: $text-transform;
+    
+    span {
+      background: darken( $twitter-color, 10% );
+      
+      &:after { 
+        border: none;
+        font-family: "foundation-icons";
+        content: "\f1e4";
+        font-size: $icon-size;
+        line-height: 0.25rem;
+        margin-left: -0.7rem;
+      }
+    }
+  }
+  
+  &.google {
+    background: $google-color;
+    text-transform: $text-transform;
+    
+    
+    span {
+      background: darken( $google-color, 10% );
+      
+      &:after { 
+        border: none;
+        font-family: "foundation-icons";
+        content: "\f1ca";
+        font-size: $icon-size;
+        line-height: 0.25rem;
+        margin-left: -0.7rem;
+      }
+    }
+  }
+  
+  &.left-icon {
+    text-align: right;
+    span {
+      left: 0;
+    }
+  }
+}
+
+nav.tab-bar{
+	border-bottom:1px solid #000000;
+}
+
+
+input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a2b2c+0,303131+6,343535+33,373737+37,353637+39,3b3c3c+53,393b3b+55,3f3f40+69,3d3e3e+73,404141+76,454646+100 */
+background: #2a2b2c; /* Old browsers */
+background: -moz-linear-gradient(top,  #2a2b2c 0%, #303131 6%, #343535 33%, #373737 37%, #353637 39%, #3b3c3c 53%, #393b3b 55%, #3f3f40 69%, #3d3e3e 73%, #404141 76%, #454646 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2a2b2c), color-stop(6%,#303131), color-stop(33%,#343535), color-stop(37%,#373737), color-stop(39%,#353637), color-stop(53%,#3b3c3c), color-stop(55%,#393b3b), color-stop(69%,#3f3f40), color-stop(73%,#3d3e3e), color-stop(76%,#404141), color-stop(100%,#454646)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #2a2b2c 0%,#303131 6%,#343535 33%,#373737 37%,#353637 39%,#3b3c3c 53%,#393b3b 55%,#3f3f40 69%,#3d3e3e 73%,#404141 76%,#454646 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #2a2b2c 0%,#303131 6%,#343535 33%,#373737 37%,#353637 39%,#3b3c3c 53%,#393b3b 55%,#3f3f40 69%,#3d3e3e 73%,#404141 76%,#454646 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #2a2b2c 0%,#303131 6%,#343535 33%,#373737 37%,#353637 39%,#3b3c3c 53%,#393b3b 55%,#3f3f40 69%,#3d3e3e 73%,#404141 76%,#454646 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #2a2b2c 0%,#303131 6%,#343535 33%,#373737 37%,#353637 39%,#3b3c3c 53%,#393b3b 55%,#3f3f40 69%,#3d3e3e 73%,#404141 76%,#454646 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2b2c', endColorstr='#454646',GradientType=0 ); /* IE6-9 */
+border:1px solid #212121;
+box-shadow:0 1px  0 rgba(255,255,255,.15);
+border-radius:3px;
+color:#FFFFFF !important;
+}
+
+//background:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a2b2c+0,303131+6,343535+33,373737+37,353637+39,3b3c3c+53,393b3b+55,3f3f40+69,3d3e3e+73,404141+76,454646+100 */
+//background: #2a2b2c; /* Old browsers */
+//background: -moz-linear-gradient(top,  #2a2b2c 0%, #303131 6%, #343535 33%, #373737 37%, #353637 39%, #3b3c3c 53%, #393b3b 55%, #3f3f40 69%, #3d3e3e 73%, #404141 76%, #454646 100%); /* FF3.6+ */
+//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2a2b2c), color-stop(6%,#303131), color-stop(33%,#343535), color-stop(37%,#373737), color-stop(39%,#353637), color-stop(53%,#3b3c3c), color-stop(55%,#393b3b), color-stop(69%,#3f3f40), color-stop(73%,#3d3e3e), color-stop(76%,#404141), color-stop(100%,#454646)); /* Chrome,Safari4+ */
+//background: -webkit-linear-gradient(top,  #2a2b2c 0%,#303131 6%,#343535 33%,#373737 37%,#353637 39%,#3b3c3c 53%,#393b3b 55%,#3f3f40 69%,#3d3e3e 73%,#404141 76%,#454646 100%); /* Chrome10+,Safari5.1+ */
+//background: -o-linear-gradient(top,  #2a2b2c 0%,#303131 6%,#343535 33%,#373737 37%,#353637 39%,#3b3c3c 53%,#393b3b 55%,#3f3f40 69%,#3d3e3e 73%,#404141 76%,#454646 100%); /* Opera 11.10+ */
+//background: -ms-linear-gradient(top,  #2a2b2c 0%,#303131 6%,#343535 33%,#373737 37%,#353637 39%,#3b3c3c 53%,#393b3b 55%,#3f3f40 69%,#3d3e3e 73%,#404141 76%,#454646 100%); /* IE10+ */
+//background: linear-gradient(to bottom,  #2a2b2c 0%,#303131 6%,#343535 33%,#373737 37%,#353637 39%,#3b3c3c 53%,#393b3b 55%,#3f3f40 69%,#3d3e3e 73%,#404141 76%,#454646 100%); /* W3C */
+//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2b2c', endColorstr='#454646',GradientType=0 ); /* IE6-9 */
